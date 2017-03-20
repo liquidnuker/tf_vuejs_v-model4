@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      <p>item set1</p>
+      <input type="checkbox" id="name1" value="name1" v-model="itemSet1">
+      <label for="name1">name1</label>
+      <input type="checkbox" id="name2" value="name2" v-model="itemSet1">
+      <label for="name2">name2</label><br>
+      <p>itemSet1: {{ itemSet1 }} {{ itemSet1.length }}</p>
+      <div v-for="items in itemSet1">
+        <p>{{ itemSet1 }}</p>
+      </div>
+      
+      <p>item set2</p>
+      <input type="checkbox" id="item2-name1" value="item2-name1" v-model="itemSet2">
+      <label for="item2-name1">name1</label>
+      <input type="checkbox" id="item2-name2" value="item2-name2" v-model="itemSet2">
+      <label for="item2-name2">name2</label><br>
+      <p>itemSet2: {{ itemSet2 }} {{ itemSet2.length }}</p>
+      <div v-for="items in itemSet2">
+        <p>{{ itemSet2 }}</p>
+      </div>
+      <p>total: {{ totalItems }}</p>
+    </div>
+  </div>
+  
+  
+  
+  
+  <script src="src/js/vendor/vue.min.js"></script>
+  <script src="src/vue-trigger.js"></script>
+</body>
+</html>
